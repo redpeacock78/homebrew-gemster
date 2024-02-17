@@ -9,7 +9,7 @@ class Gemster < Formula
 
   def install
     system "shards", "build", "--release"
-    bin.install "bin/test"
+    bin.install "bin/gemster"
   end
 
   test do
