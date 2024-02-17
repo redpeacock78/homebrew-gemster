@@ -13,6 +13,6 @@ class Gemster < Formula
   end
 
   test do
-    system "gemster"
+    system "gemster", "-v"
   end
 end
