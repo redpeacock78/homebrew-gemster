@@ -1,16 +1,18 @@
 class Gemster < Formula
   desc "Simple task runner with file watch & hot reload functions"
   homepage "https://github.com/redpeacock78/gemster"
-  url "https://ghrl.deno.dev/redpeacock78/gemster/gemster-macos.zip"
-  version "0.1.1"
-  sha256 "2ee743cbc05b85ce368fdf83c7c6d2fd3d9873fd5cfdb09ed9c7c45f0794665d"
+  url "https://github.com/redpeacock78/gemster/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "c9f2f80b378bf7281d8f325f2b476f006ee323f9856128a0c0ee2a45b166f2e6"
   license "MIT"
 
+  depends_on "crystal" => :build
+
   def install
-    bin.install "gemster"
+    system "shards", "build", "--release"
+    bin.install "bin/test"
   end
 
   test do
-    system "gemster", "-v"
+    system "gemster"
   end
 end
