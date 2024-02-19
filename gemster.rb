@@ -1,8 +1,8 @@
 class Gemster < Formula
   desc "Simple task runner with file watch & hot reload functions"
   homepage "https://github.com/redpeacock78/gemster"
-  url "https://github.com/redpeacock78/gemster/archive/refs/tags/v0.1.4.tar.gz"
-  sha256 "c0fdfeb8fc3dc287a30ea549cfb99af9cf29532cb32c76c266282ba71efbeeef"
+  url "https://github.com/redpeacock78/gemster/archive/refs/tags/v0.1.5.tar.gz"
+  sha256 "a80338e265813e8b0f63737294e148c16af9b0f25f5f7b9271e4b5feb0bf067f"
   license "MIT"
 
   depends_on "crystal" => :build
